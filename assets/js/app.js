@@ -14,10 +14,10 @@ document.getElementById("numbers").textContent = `${totalNumber}`;
 
 //generate 4 random unique characters
 var possible = "abcd";
-var character1 = null;
-var character2 = null;
-var character3 = null;
-var character4 = null;
+var character1 = "";
+var character2 = "";
+var character3 = "";
+var character4 = "";
 do {
   character1 = possible.charAt(Math.floor(Math.random() * 4));
   character2 = possible.charAt(Math.floor(Math.random() * 4));
