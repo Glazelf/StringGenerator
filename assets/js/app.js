@@ -18,11 +18,11 @@ var character1 = null;
 var character2 = null;
 var character3 = null;
 var character4 = null;
-do{
-  character1 = possible.charAt(Math.floor(Math.random() * 4))
-  character2 = possible.charAt(Math.floor(Math.random() * 4))
-  character3 = possible.charAt(Math.floor(Math.random() * 4))
-  character4 = possible.charAt(Math.floor(Math.random() * 4))
+do {
+  character1 = possible.charAt(Math.floor(Math.random() * 4));
+  character2 = possible.charAt(Math.floor(Math.random() * 4));
+  character3 = possible.charAt(Math.floor(Math.random() * 4));
+  character4 = possible.charAt(Math.floor(Math.random() * 4));
 } while (character1 == character2 || character1 == character3 || character1 == character4 || character2 == character3 || character2 == character4 || character3 == character4);
-var totalCharacters = `${character1}${character2}${character3}${character4}`
-document.getElementById("letters").textContent = `${totalCharacters}`
+var totalCharacters = `${character1}${character2}${character3}${character4}`;
+document.getElementById("letters").textContent = `${totalCharacters}`;
