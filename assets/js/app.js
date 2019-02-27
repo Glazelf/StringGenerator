@@ -14,15 +14,20 @@ document.getElementById("numbers").textContent = `${totalNumber}`;
 
 //generate 4 random unique characters
 var possible = "abcd";
-var character1 = "";
-var character2 = "";
-var character3 = "";
-var character4 = "";
+function string() {
+  do {
+    character1 = possible.charAt(Math.floor(Math.random() * 4));
+    character2 = possible.charAt(Math.floor(Math.random() * 4));
+    character3 = possible.charAt(Math.floor(Math.random() * 4));
+    character4 = possible.charAt(Math.floor(Math.random() * 4));
+  } while (character1 == character2 || character1 == character3 || character1 == character4 || character2 == character3 || character2 == character4 || character3 == character4){
+  document.getElementById("letters").innerHTML += `${character1}${character2}${character3}${character4}<br>`;
+  console.log(2);
+  };
+};
+
+var i = 0
 do {
-  character1 = possible.charAt(Math.floor(Math.random() * 4));
-  character2 = possible.charAt(Math.floor(Math.random() * 4));
-  character3 = possible.charAt(Math.floor(Math.random() * 4));
-  character4 = possible.charAt(Math.floor(Math.random() * 4));
-} while (character1 == character2 || character1 == character3 || character1 == character4 || character2 == character3 || character2 == character4 || character3 == character4);
-var totalCharacters = `${character1}${character2}${character3}${character4}`;
-document.getElementById("letters").textContent = `${totalCharacters}`;
+  string();
+  i++;
+} while (i < 20); 
